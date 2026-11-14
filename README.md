@@ -31,7 +31,21 @@ Multi-gigabyte AI Takeouts ship as massive, unreadable JSON envelopes bloated wi
 
 ---
 
-## 3. The Hostage Data Paradox
+## 3. Native Win32 DirectX 12 Viewport
+
+BloatStrip rejects bloated web wrappers (0% Chromium, 0% Electron). The interface compiles directly to native Win32 machine code rendering over hardware-accelerated DirectX 12 (`egui-wgpu`):
+
+<div align="center">
+
+![BloatStrip Native DirectX 12 Viewport](assets/gui.png)
+
+*Direct DMA buffer monitoring, live hardware telemetry stream, 0 open network descriptors.*
+
+</div>
+
+---
+
+## 4. The Hostage Data Paradox
 
 - **The Illusion of Data Portability:** Platforms offer a "Download Your Data" button that dumps an unindexed, multi-gigabyte JSON monster designed to be unsearchable by standard text editors. Loading it in VS Code or Notepad++ locks your system or crashes due to RAM exhaustion.
 - **The Secondary Surveillance Trap:** Most users turn to web-based "JSON viewers" or online parsers to read their archives—unknowingly re-uploading their entire unredacted conversational and intellectual history to another third-party cloud.
@@ -40,7 +54,7 @@ Multi-gigabyte AI Takeouts ship as massive, unreadable JSON envelopes bloated wi
 
 ---
 
-## 4. Empirical Benchmark Telemetry
+## 5. Empirical Benchmark Telemetry
 
 **WORKLOAD: 8.42 GB UNINDEXED GOOGLE TAKEOUT (.JSON)**  
 *AVX2 256-Bit Streaming Ring Buffer (Intel Core i9-13900K / 64GB DDR5 / Samsung 990 PRO NVMe)*
@@ -62,7 +76,7 @@ Multi-gigabyte AI Takeouts ship as massive, unreadable JSON envelopes bloated wi
 
 ---
 
-## 5. Technical Specifications
+## 6. Technical Specifications
 
 - **Runtime:** Native Rust binary (`opt-level = 3`, stripped symbols, panic abort).
 - **Network Egress:** Strict zero (`0.0.0.0`). Zero network crates, zero external DNS requests.
@@ -71,7 +85,7 @@ Multi-gigabyte AI Takeouts ship as massive, unreadable JSON envelopes bloated wi
 
 ---
 
-## 6. Official Portal
+## 7. Official Portal
 
 Official workstation licenses, architecture whitepapers, and SHA-256 release verification:  
 👉 **[https://bloatstrip.com](https://bloatstrip.com)**
