@@ -89,6 +89,12 @@ BloatStrip rejects bloated web wrappers (0% Chromium, 0% Electron). The interfac
 
 Every release binary is deterministically built, symbol-stripped, and audited across independent multi-engine threat analysis clouds (**Microsoft Security Intelligence WDSI**, **Kaspersky OpenTIP**, **VirSCAN 49/49**, and **VirusTotal**). BloatStrip operates with zero network sockets, zero telemetric beacons, and zero cloud callbacks.
 
+<div align="center">
+
+![Multi-Engine Antivirus & SHA-256 Matrix](assets/antivirus_consensus_table.png)
+
+</div>
+
 ### Multi-Engine Antivirus Consensus
 
 | Target Binary | Status | Microsoft WDSI | Kaspersky OpenTIP | VirSCAN (49/49) | VirusTotal |
