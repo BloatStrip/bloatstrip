@@ -37,9 +37,9 @@ BloatStrip rejects bloated web wrappers (0% Chromium, 0% Electron). The interfac
 
 <div align="center">
 
-![BloatStrip Native DirectX 12 Viewport](assets/gui.png)
+![BloatStrip Sovereign Ingestion Workflow](assets/dropzone.gif)
 
-*Direct DMA buffer monitoring, live hardware telemetry stream, 0 open network descriptors.*
+*Autonomous folder snapping: raw Takeout dropped into DROPZONE, 1,337 nodes stripped into REDUCED in milliseconds.*
 
 </div>
 
@@ -85,7 +85,31 @@ BloatStrip rejects bloated web wrappers (0% Chromium, 0% Electron). The interfac
 
 ---
 
-## 7. Official Portal
+## 7. Multi-Engine Antivirus Consensus & Cryptographic Integrity
+
+Every release binary is deterministically built, symbol-stripped, and audited across independent multi-engine threat analysis clouds. BloatStrip operates with zero network sockets, zero telemetric beacons, and zero cloud callbacks.
+
+### SHA-256 Release Matrix
+
+| Target Binary | Role | SHA-256 Checksum | Antivirus Consensus | Verification Audit |
+| :--- | :--- | :--- | :--- | :--- |
+| **`bloatstrip.exe`** | Core Engine | `40c3720acc99798fbb0932c7e9ab912b25b3dadd288e9632b899835a7ab3a7d5` | **100% CLEAN** | [Kaspersky OpenTIP Safe →](https://opentip.kaspersky.com/40c3720acc99798fbb0932c7e9ab912b25b3dadd288e9632b899835a7ab3a7d5/)<br>[VirSCAN 49/49 Clean PDF →](docs/antivirus/VIRSCANORG-bloatstrip.pdf) |
+| **`bloatstrip-setup.exe`** | Installer | `55bd1a6ac04e7231caa86ab69289749e03673a904b2cf90575d2711f2f801ad3` | **100% CLEAN** | [Kaspersky OpenTIP Safe →](https://opentip.kaspersky.com/55bd1a6ac04e7231caa86ab69289749e03673a904b2cf90575d2711f2f801ad3/)<br>[VirSCAN 49/49 Clean PDF →](docs/antivirus/VIRSCANORG-bloatstrip-setup.pdf) |
+| **`activator.exe`** | Key Derivation | `14f6df522199ed43c90c4b18d1ac55a574405847eb1a3a38a8bc5bcdb533cf0a` | **100% TIER-1** | [Kaspersky OpenTIP Safe →](https://opentip.kaspersky.com/14f6df522199ed43c90c4b18d1ac55a574405847eb1a3a38a8bc5bcdb533cf0a/)<br>[VirSCAN 49/49 Clean PDF →](docs/antivirus/VIRSCANORG-activator.pdf) |
+
+### Deterministic Air-Gap Verification (Zero Outbound Egress)
+To independently verify zero-network dependency on physical silicon:
+1. **Physical Air-Gap Disconnect:** Disconnect physical RJ45 Ethernet or toggle Windows Airplane Mode.
+2. **Zero-Socket Syscall Audit:** Execute in PowerShell during multi-gigabyte archive ingestion:
+   ```powershell
+   Get-NetTCPConnection | Where-Object { $_.OwningProcess -eq (Get-Process bloatstrip).Id }
+   # Output: Empty. 0 listening ports, 0 outbound connections.
+   ```
+3. **Sysinternals Procmon Kernel Filter:** Filter `Process Name is bloatstrip.exe` and `Category is Network` $\rightarrow$ **0 events** logged across full process lifecycle.
+
+---
+
+## 8. Official Portal
 
 Official workstation licenses, architecture whitepapers, and SHA-256 release verification:  
 👉 **[https://bloatstrip.com](https://bloatstrip.com)**
