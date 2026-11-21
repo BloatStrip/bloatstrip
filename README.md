@@ -107,10 +107,10 @@ Every release binary is deterministically built, symbol-stripped, and audited ac
 
 | Binary Target | Byte Size | SHA-256 Checksum |
 | :--- | :--- | :--- |
-| **`bloatstrip.exe`** | 13,667,328 B | `E717B567F30DD0205B3B6CC9A1DA005BFFCA8D7C9670B00008CA4F7199BBBEE1` |
-| **`bloatstrip-setup.exe`** | 26,176,000 B | `120D52A9C433B8CFF283A13C577CD11BAD937C9C3492564FA7054CDD7D76D8B1` |
-| **`activator.exe`** | 11,786,240 B | `A7F5FA175D8461F8B04356A1ED040FF805FBB12B2A3300B2A6DD2F3D3C774059` |
-| **`bloatstrip-launcher.exe`** | 1,000,960 B | `98EB483BCB7900FFCD939414F1A21FBA5F34CA4C51BDA245EA760A1396503AA8` |
+| **`bloatstrip.exe`** | 13,668,352 B | `8F55FF88FD2D3BA1D50AA2D1A357DFE46E053F6E2866D31716BB2F798194705B` |
+| **`bloatstrip-setup.exe`** | 26,183,680 B | `E74A5FFDD9DEEE1A8F359D028D1E878192961DBEFA8C7C61ABCAA0CBFB9E5DA9` |
+| **`activator.exe`** | 11,793,920 B | `347763BD044FACDD12BC66F27837CDC58B0D2BA6569E9E022FF7F7BDE6536739` |
+| **`bloatstrip-launcher.exe`** | 1,000,960 B | `27054291E3671D3981E1F820804CF5BAFB798B71AE89DB8021F3AE40499A8589` |
 
 > **Forensic Note on Static Heuristics & Live Verification:** Initial v1.0.0 release binaries were verified clean across Microsoft Security Intelligence (WDSI), Kaspersky OpenTIP, and VirSCAN (49/49). Newly compiled native Windows Rust PE binaries can occasionally trigger automated novelty markers in static ML classifiers with zero sandbox detections. Live v2.0 SHA-256 checksums and machine-readable verification manifests are published in [`docs/verification/SHA256_CHECKSUMS.txt`](docs/verification/SHA256_CHECKSUMS.txt) and at [https://bloatstrip.com/verify](https://bloatstrip.com/verify).
 
