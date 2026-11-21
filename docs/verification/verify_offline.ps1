@@ -9,9 +9,10 @@ param(
 )
 
 $Expected = @{
-    "bloatstrip.exe"          = "48968AEE1E2FDBB2F96F668F5331D44CB7C33B1002D969D3F117ED03343277C6"
-    "activator.exe"           = "4222DF79F921F0D1801F42993C47716117ED99AA11D1CE2196013718A80A2A5D"
-    "bloatstrip-launcher.exe" = "333FF8546BB3990424440342E5187829871C319F3142199560AF49BAB9F78D78"
+    "bloatstrip.exe"          = "E717B567F30DD0205B3B6CC9A1DA005BFFCA8D7C9670B00008CA4F7199BBBEE1"
+    "bloatstrip-setup.exe"    = "120D52A9C433B8CFF283A13C577CD11BAD937C9C3492564FA7054CDD7D76D8B1"
+    "activator.exe"           = "A7F5FA175D8461F8B04356A1ED040FF805FBB12B2A3300B2A6DD2F3D3C774059"
+    "bloatstrip-launcher.exe" = "98EB483BCB7900FFCD939414F1A21FBA5F34CA4C51BDA245EA760A1396503AA8"
 }
 
 Write-Host "=== 1. SHA-256 BINARY INTEGRITY ($InstallDir) ==="
@@ -35,6 +36,8 @@ if (Test-Path $mainExe) {
         $found = $ascii.IndexOf($dll, [System.StringComparison]::OrdinalIgnoreCase) -ge 0
         Write-Host ("HTTP API {0,-14}: Present={1}" -f $dll, $found)
     }
+    Write-Host ("Manifest asInvoker      : Present={0}" -f $ascii.Contains('level="asInvoker"'))
+    Write-Host ("Manifest PerMonitorV2   : Present={0}" -f $ascii.Contains('PerMonitorV2'))
 }
 
 Write-Host "`n=== 3. LIVE SOCKET AUDIT ==="
