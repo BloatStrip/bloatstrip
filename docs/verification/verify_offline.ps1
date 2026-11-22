@@ -5,14 +5,14 @@ Verifies SHA-256 hashes, checks PE import table for networking DLLs (ws2_32/winh
 and audits active sockets if bloatstrip.exe is running.
 #>
 param(
-    [string]$InstallDir = "$env:LOCALAPPDATA\Programs\BloatStrip"
+    [string]$InstallDir = "$env:LOCALAPPDATA\Programs\BloatStrip\Gemini Engine"
 )
 
 $Expected = @{
-    "bloatstrip.exe"          = "8F55FF88FD2D3BA1D50AA2D1A357DFE46E053F6E2866D31716BB2F798194705B"
-    "bloatstrip-setup.exe"    = "E74A5FFDD9DEEE1A8F359D028D1E878192961DBEFA8C7C61ABCAA0CBFB9E5DA9"
-    "activator.exe"           = "347763BD044FACDD12BC66F27837CDC58B0D2BA6569E9E022FF7F7BDE6536739"
-    "bloatstrip-launcher.exe" = "27054291E3671D3981E1F820804CF5BAFB798B71AE89DB8021F3AE40499A8589"
+    "bloatstrip.exe"              = "8A50CC059E3E1732DB52448D09FEDDD85EB6651C4B805D4A2B4E6EACCB666BA8"
+    "bloatstrip-gemini-setup.exe" = "CDF4771EDB03C0CBF1EF73DE12954C4195E721F4BD4D77F7DA54B9C33FE6D301"
+    "activator.exe"               = "C66F6AC4A853BD316C7CEF59ABE91129FBDE91522E041EAAF3FC838F7BCC105B"
+    "bloatstrip-launcher.exe"     = "9BB6876A96D4DBA19AE9BF962C0908B8B9579FD60F479C7901E725F5186CF877"
 }
 
 Write-Host "=== 1. SHA-256 BINARY INTEGRITY ($InstallDir) ==="

@@ -3,7 +3,7 @@
 ![BloatStrip Sovereign Engine](assets/readme_header.png)
 
 # BLOATSTRIP // SOVEREIGN ENGINE
-### 100% OFFLINE TAKEOUT COMPRESSOR & RECONSTRUCTION ENGINE
+### ABSOLUTE-ZERO LOCAL NOISE-TO-SIGNAL COMPILER FOR MULTI-GB AI EXPORTS
 
 **The industry wants your intellectual history locked in their cloud. BloatStrip is the counter-measure.**
 
@@ -13,7 +13,7 @@
 
 ## 1. System Overview
 
-BloatStrip is an air-gapped native Windows 10/11 (x64) desktop utility built in Rust for **founders, lawyers, analysts, researchers, Obsidian/Notion operators, and AI power users** on personal or IT-managed corporate workstations. It converts multi-gigabyte Google Takeout Gemini exports (`MyActivity.json` / `.jsonl`) into clean, LLM-ready Markdown (`U:` / `M:` turns) in milliseconds—**zero Admin/UAC elevation**, **zero Python/Node/CLI setup**, **zero network sockets**, and **zero telemetry**.
+BloatStrip is a local, air-gapped native Windows 10/11 (x64) desktop utility built in Rust for **founders, lawyers, analysts, researchers, Obsidian/Notion operators, and AI power users** on personal or IT-managed corporate workstations. As a Zero-DOM Noise-to-Signal Compiler, it compiles multi-gigabyte AI archives (Google Takeout Gemini `MyActivity.json` / `.jsonl`, Anthropic Claude `conversations.json` / `.jsonl`, and OpenAI ChatGPT `conversations.json`) into dense, LLM-ready Markdown (`U:` / `M:` turns) in milliseconds—**zero Admin/UAC elevation**, **zero Python/Node/CLI setup**, **zero network sockets**, and **zero telemetry**. Custom schema/framework builds are documented at [`https://bloatstrip.com/custom`](https://bloatstrip.com/custom).
 
 ---
 
@@ -103,19 +103,39 @@ Every release binary is deterministically built, symbol-stripped, and audited ac
 | **`bloatstrip-setup.exe`** | **100% CLEAN** | [WDSI Verified →](https://www.microsoft.com/en-us/wdsi/submission/5e9eb005-761f-4fac-b1fd-1bac69da9fa8) | [OpenTIP Safe →](https://opentip.kaspersky.com/55BD1A6AC04E7231CAA86AB69289749E03673A904B2CF90575D2711F2F801AD3/results?tab=upload) | [49/49 PDF →](docs/antivirus/VIRSCANORG-bloatstrip-setup.pdf) | [VT Audit →](https://www.virustotal.com/gui/file/55bd1a6ac04e7231caa86ab69289749e03673a904b2cf90575d2711f2f801ad3) |
 | **`activator.exe`** | **100% TIER-1** | [WDSI Verified →](https://www.microsoft.com/en-us/wdsi/submission/25923753-6643-4f55-968f-4ac09dd063e9) | [OpenTIP Safe →](https://opentip.kaspersky.com/14F6DF522199ED43C90C4B18D1AC55A574405847EB1A3A38A8BC5BCDB533CF0A/results?tab=upload) | [49/49 PDF →](docs/antivirus/VIRSCANORG-activator.pdf) | [VT Audit →](https://www.virustotal.com/gui/file/14f6df522199ed43c90c4b18d1ac55a574405847eb1a3a38a8bc5bcdb533cf0a) |
 
-### Cryptographic SHA-256 Checksum Matrix (v2.0 Windows x64 Release)
+### Cryptographic SHA-256 Checksum Matrices (v2.0.0 Windows x64)
+
+**Engine 01 — Gemini Engine (`BLOATSTRIP`)**
 
 | Binary Target | Byte Size | SHA-256 Checksum |
 | :--- | :--- | :--- |
-| **`bloatstrip.exe`** | 13,668,352 B | `8F55FF88FD2D3BA1D50AA2D1A357DFE46E053F6E2866D31716BB2F798194705B` |
-| **`bloatstrip-setup.exe`** | 26,183,680 B | `E74A5FFDD9DEEE1A8F359D028D1E878192961DBEFA8C7C61ABCAA0CBFB9E5DA9` |
-| **`activator.exe`** | 11,793,920 B | `347763BD044FACDD12BC66F27837CDC58B0D2BA6569E9E022FF7F7BDE6536739` |
-| **`bloatstrip-launcher.exe`** | 1,000,960 B | `27054291E3671D3981E1F820804CF5BAFB798B71AE89DB8021F3AE40499A8589` |
+| **`bloatstrip.exe`** | 13,666,816 B | `8A50CC059E3E1732DB52448D09FEDDD85EB6651C4B805D4A2B4E6EACCB666BA8` |
+| **`bloatstrip-gemini-setup.exe`** | 26,129,408 B | `CDF4771EDB03C0CBF1EF73DE12954C4195E721F4BD4D77F7DA54B9C33FE6D301` |
+| **`activator.exe`** | 11,785,728 B | `C66F6AC4A853BD316C7CEF59ABE91129FBDE91522E041EAAF3FC838F7BCC105B` |
+| **`bloatstrip-launcher.exe`** | 992,256 B | `9BB6876A96D4DBA19AE9BF962C0908B8B9579FD60F479C7901E725F5186CF877` |
 
-> **Forensic Note on Static Heuristics & Live Verification:** Initial v1.0.0 release binaries were verified clean across Microsoft Security Intelligence (WDSI), Kaspersky OpenTIP, and VirSCAN (49/49). Newly compiled native Windows Rust PE binaries can occasionally trigger automated novelty markers in static ML classifiers with zero sandbox detections. Live v2.0 SHA-256 checksums and machine-readable verification manifests are published in [`docs/verification/SHA256_CHECKSUMS.txt`](docs/verification/SHA256_CHECKSUMS.txt) and at [https://bloatstrip.com/verify](https://bloatstrip.com/verify).
+**Engine 02 — Anthropic Engine (`BLOATSTRIP-CLAUDE`)**
+
+| Binary Target | Byte Size | SHA-256 Checksum |
+| :--- | :--- | :--- |
+| **`bloatstrip.exe`** | 11,976,704 B | `8A92387C2C5166A9113B8ACD2DEF0291A62B94481737D8E2B6F5A24BBE4A6039` |
+| **`bloatstrip-anthropic-setup.exe`** | 25,263,104 B | `9F55049F1A6954550026E630310E5A45196085A95F365D62E99E534CED56795C` |
+| **`activator.exe`** | 11,785,728 B | `F1472231DCC1414EEC1EE1F35EBC7863BB54CE067A109FFDF859DE11E317DC39` |
+| **`bloatstrip-launcher.exe`** | 992,256 B | `C1A6E5D0B8AD9F13CEEDF1796CCAB40D4D4C4868C140B4F1A452FF35937C5666` |
+
+**Engine 03 — OpenAI Engine (`BLOATSTRIP-OPENAI`)**
+
+| Binary Target | Byte Size | SHA-256 Checksum |
+| :--- | :--- | :--- |
+| **`bloatstrip.exe`** | 11,990,016 B | `675DBF02CA41FC0366E794C88364C8A45295FC94B68BA439E838902C1D37D448` |
+| **`bloatstrip-openai-setup.exe`** | 25,275,904 B | `62EC731D2609422E16C6CBED52CE8DC24DFBAD279B62DCB8BB36F0BBFB2D8A81` |
+| **`activator.exe`** | 11,785,728 B | `9B25FB3E0B7112749F5D9CEF54212FC3267195EF330D1B8EEDA9AC87FBCA3B28` |
+| **`bloatstrip-launcher.exe`** | 992,256 B | `23C75B6C98EBA5CFED6B9AC5DABA96A32F6C4F8E2E54437E0FD2D2462A273789` |
+
+Live v2.0.0 SHA-256 checksums and machine-readable verification manifests are published in [`docs/verification/SHA256_CHECKSUMS.txt`](docs/verification/SHA256_CHECKSUMS.txt) and at [https://bloatstrip.com/verify](https://bloatstrip.com/verify).
 
 ### Independent Verification & Reproducible Benchmarks
-- **Offline Integrity & Socket Auditor:** [`docs/verification/verify_offline.ps1`](docs/verification/verify_offline.ps1) verifies PE SHA-256 checksums against `v2.0`, confirms `winhttp.dll` and `wininet.dll` are completely absent (`False`), and queries live TCP sockets via `Get-NetTCPConnection`. *(Note: Rust `std` statically emits standard `ws2_32.dll` CRT stubs on Windows, which are never invoked at runtime—verified with `0` active sockets under Airplane Mode / Procmon).*
+- **Offline Integrity & Socket Auditor:** [`docs/verification/verify_offline.ps1`](docs/verification/verify_offline.ps1) verifies PE SHA-256 checksums against `v2.0.0`, confirms `winhttp.dll` and `wininet.dll` are completely absent (`False`), and queries live TCP sockets via `Get-NetTCPConnection`.
 - **Interpreter OOM Reproducer:** [`docs/verification/stress_oom_repro.mjs`](docs/verification/stress_oom_repro.mjs) generates a synthetic multi-hundred-MB / GB Takeout-shaped JSON workload locally so anyone can measure `JSON.parse()` heap bloat and V8 memory crashes on commodity hardware.
 - **Sysinternals Procmon Kernel Filter:** Filter `Process Name is bloatstrip.exe` and `Category is Network` $\rightarrow$ **0 events** logged across full process lifecycle.
 
@@ -123,5 +143,5 @@ Every release binary is deterministically built, symbol-stripped, and audited ac
 
 ## 8. Official Portal
 
-Official workstation licenses, architecture whitepapers, and SHA-256 release verification:  
-👉 **[https://bloatstrip.com](https://bloatstrip.com)**
+Official workstation licenses, Noise-to-Signal Compiler telemetry, custom engineering builds, and SHA-256 release verification:  
+👉 **[https://bloatstrip.com](https://bloatstrip.com)** | **[Telemetry](https://bloatstrip.com/telemetry)** | **[Verify](https://bloatstrip.com/verify)** | **[Custom Builds](https://bloatstrip.com/custom)**
